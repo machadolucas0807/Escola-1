@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Seletores Personalizados.css" />
+    <title>Seletores Personalizados (id e class)</title>
+    <style>
+      /*
+        id em HTML = # em CSS / só podemos usar um id para um único elemento, o que significa que não podemos ter dois elementos com um mesmo id dentro de uma mesma página. 
+      */ 
+      /*class em HTML = . em CSS/ pode vários elementos */
+
+      body{
+        background-color: #A9D9D0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+      }
+
+      #principal{
+        text-align: center;
+        background-color: #027373;
+        color: #F2E7DC;
+      }
+
+      .basico{
+        color: #027373;
+        text-align: right;
+      }
+
+      .intermediario{
+        color: #5e7302;
+        text-align: right;
+      }
+
+      .avancado{
+        color: #732b02;
+        text-align: right;
+      }
+
+      .destaque{
+        background-color: #F2E7DC;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="principal">Criando Sites com HTML e CSS</h1>
+    <!--ID é único, não pode ser repetido-->
+    <hr />
+
+    <h1 class="destaque">Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <!--Class pode ser utilizada várias vezes-->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      labore numquam sit molestias at, dolores eaque velit dicta id saepe ex
+      laboriosam recusandae, necessitatibus placeat delectus minus quod quos
+      qui?
+    </p>
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      labore numquam sit molestias at, dolores eaque velit dicta id saepe ex
+      laboriosam recusandae, necessitatibus placeat delectus minus quod quos
+      qui?
+    </p>
+    <h2 class="avancado">HTML Avançado</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      labore numquam sit molestias at, dolores eaque velit dicta id saepe ex
+      laboriosam recusandae, necessitatibus placeat delectus minus quod quos
+      qui?
+    </p>
+    <br />
+
+    <h1 class="destaque">Aprendendo CSS</h1>
+    <h2 class="basico">CSS Básico</h2>
+    <!--Class pode ser utilizada várias vezes-->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      labore numquam sit molestias at, dolores eaque velit dicta id saepe ex
+      laboriosam recusandae, necessitatibus placeat delectus minus quod quos
+      qui?
+    </p>
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      labore numquam sit molestias at, dolores eaque velit dicta id saepe ex
+      laboriosam recusandae, necessitatibus placeat delectus minus quod quos
+      qui?
+    </p>
+    <h2 class="avancado destaque">CSS Avançado</h2>
+    <!--Inserção de mais de uma classe, separada por espaço-->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      labore numquam sit molestias at, dolores eaque velit dicta id saepe ex
+      laboriosam recusandae, necessitatibus placeat delectus minus quod quos
+      qui?
+    </p>
+    <br />
+  </body>
+</html>

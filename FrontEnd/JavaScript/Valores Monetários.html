@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Valores Monetários</title>
+    <style>
+      body {
+        background-color: rgb(26, 63, 143);
+        color: antiquewhite;
+        font: normal 20pt arial;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Valores Monetários</h1>
+      <hr>
+      <script>
+          var n1 = Number (window.prompt("Digite um valor: "))
+          document.write (`O valor digitado foi:
+            ${
+              n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL' })
+              /*
+                .toLocaleString(): localizar uma string;
+                style: 'currency': dinheiro
+                BRL: real
+              */
+            }`
+          )
+      </script>
+    </main>
+  </body>
+</html>

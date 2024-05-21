@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+  /*Safe font combinations - funciona em qualquer dispositivo (https://www.w3schools.com/cssref/css_websafe_fonts.php) */
+  font-family: Arial, Helvetica, sans-serif; /*Combinação não serifada*/
+}
+
+h1 {
+  /*
+    ShortHand Font:
+    1.style - 2.weight - 3.size - 4.family
+  */
+  font: italic bold 3em "Times New Roman", Times,
+    serif /*combinação serifada (para o título apenas)*/;
+}
+
+h2 {
+  font-weight: bolder;
+  font-style: italic; /*italico ou normal*/
+  text-decoration: underline; /*sublinhado*/
+  font-weight: lighter;
+  /*weight(peso), width(largura) e height(altura)*/
+  /*Tipos weight: lighter, normal, bold, bolder/ 100 a 900*/
+}
+
+.mono {
+  font-family: "Courier New", Courier, monospace;
+}
+/*
+  Medidas Relativas
+  em (rel. ao tamanho da fonte) (equivale a 16px) - RECOMENDAÇÃO OFICIAL;
+  ex (alt.X atual da font); 
+  rem (rel a font do body do arquivo);
+  vw (rel a larg do viewport (tela));
+*/
+
+/*
+  Medidas Absolutas (serão exibidas de acordo com o tamanho da tela):
+  cm, mm; 
+  in(pol); 
+  px - RECOMENDAÇÃO OFICIAL ; - pradrão dos navegadores é 16px
+  pt e pc (ponto e paica não são recomendadas para conteúdo digital)
+*/

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body
+{
+    background-image: linear-gradient(45deg, #F9B854 30%, #E7304C, #9A4995, #5756A2);
+    /*
+        Pode parecer esquisito no início, mas um gradiente é considerado pelo navegador como se fosse uma imagem, por isso usamos a propriedade background-image na declaração CSS. A função linear-gradient é auto-explicativa e gera um gradiente linear angular. (da esquerda para a direita, branco para azul). Colocar porcentagem controla o quanto a cor predomina
+    */
+    background-attachment: fixed; 
+    /*
+        a imagem de fundo permanece fixa em relação à visualização do navegador (viewport), independentemente do rolamento da página. Isso significa que, mesmo se o conteúdo dentro do elemento rolar, a imagem de fundo permanecerá na mesma posição em relação à janela do navegador. Ela também se ajustará automaticamente ao tamanho da visualização. No entanto, observe que a imagem de fundo provavelmente será visível apenas parcialmente, dependendo do tamanho do elemento e da imagem.
+    */
+} 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personalizando Links (:: pseudoelemento) </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        
+        a{
+            color: red;
+            text-decoration: none; /*remove os sublinhados*/
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{ /*ao ser clicado*/
+            color: yellow;
+        }
+
+        a::after{ /*adição de itens antes ou depois do html, pelo css*/
+            content: ' [link]';
+            text-decoration: none;
+            color: darkgray;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links (:: pseudoelemento)</h1>
+    <ul>
+        <li><a href="https://github.com/machadolucas0807" target="_blank">Github</a></li>
+        <li><a href="https://www.instagram.com/machado_lucas0807/?igsh=bHQ4dnExanNxNWdz" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/machadolucas0807/" target="_blank">Linkedin</a></li>
+    </ul>
+    
+</body>
+</html>
