@@ -7,7 +7,7 @@
     <title>DOM</title>
     <style>
       body {
-        background-color: rgb(55, 207, 17);
+        background-color: rgb(20, 66, 9);
         color: white;
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
@@ -16,12 +16,40 @@
   </head>
 
   <body>
-    <h1>DOM</h1>
-    <p>Aqui vai o resultado:</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
-    <script>
+    <h1><strong>DOM</strong></h1>
+    <hr />
 
+    <h2><u>Seleção de Objetos</u></h2>
+
+    <p>Parágrafo 1</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">div 1</div>
+    <!--<div name="txt">div 2</div>-->
+    <!--<div class="exe">div 3</div>-->
+    <br />
+
+    <script>
+      var corpo = document.body; //acesso ao corpo
+      corpo.style.background = "black";
+
+      var p1 = document.getElementsByTagName("p")[0]; // PRIMEIRA([0]) tag P
+      document.write(
+        `Repetindo texto do primeiro parágrafo através de JS: ${p1.innerHTML}` //escrever no documento, o innerhtml ja tráz o texto com a formatação denominada.
+      );
+      p1.style.color = "red";
+
+      //var d = document.getElementById("msg");
+      d.style.background = "green";
+
+      //var txt = document.getElementsByName("txt")[0];
+      txt.innerHTML = "texto div 2 alterado";
+
+      //var exe = document.getElementsByClassName("exe")[0];
+      exe.innerHTML = "texto div 3 alterado";
+
+      var top = document.querySelector(div#msg) //div == #
+
+      var z = document.querySelector(div.exe); //class == .
     </script>
   </body>
 </html>
