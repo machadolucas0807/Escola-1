@@ -25,12 +25,27 @@
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
     <div id="msg">div 1</div>
     <div class="exe">div 2</div>
-    <br>
+    <div name="txt">div 3</div>
+    <br />
 
     <script>
-        
+      var corpo = document.body; //acesso ao corpo
+      corpo.style.background = "black"; // alteração fundo original
+
+      var p1 = document.getElementsByTagName("p")[0]; // PRIMEIRA([0]) tag P
+      document.write(
+        `Repetindo texto do primeiro parágrafo através de JS: ${p1.innerHTML}` //escrever no documento, o innerhtml ja tráz o texto com a formatação denominada.
+      );
+      p1.style.color = "red";
+
+      var d = document.getElementById("msg");
+      msg.innerHTML = "texto div 1 alterado;";
+
+      var exe = document.getElementsByClassName("exe")[0];
+      exe.innerHTML = "texto div 2 alterado;";
+
+      var txt = document.getElementsByName("txt")[0];
+      txt.innerHTML = "texto div 3 alterado;";
     </script>
-
-
   </body>
 </html>
