@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Modelo de Caixas</title>
+    <title>
+      <a
+      href="https://www.notion.so/Box-Model-753f7ab48535466ca226ba9b26f0ba24?pvs=4">
+      Modelo de Caixas </a>
+    </title>
     <style>
-      h1 /*box level*/ { 
-
+      h1 /*box level*/ {
         background-color: lightcyan;
         height: 300px;
         width: 300px;
         /*Content*/
+
+        text-align: center;
 
         padding-top: 10px;
         padding-right: 10px;
@@ -24,22 +29,18 @@
 
         border-width: 10px;
         border-style: solid;
-        border-color: darkgray;
+        border-color: rgb(167, 7, 7);
         /*(shorthand)border: 10px solid darkgray;*/
-
-        
-
-        
-        margin: 20px auto 40px auto;
-        /*margin: auto; (centraliza a caixa)*/
-
-        text-align: center;
 
         outline-width: 5px;
         outline-style: dashed;
-        outline-color: salmon;
-        /*Linha entre a margem e a borda*/
+        outline-color: rgb(4, 88, 25);
+        /*Linha dentro da margem*/
         /*(shorthand)outline: 5px dashed salmon*/
+
+        margin: 20px auto 40px auto;
+        /*margin: auto; (centraliza a caixa)*/
+        /*Alterações seguindo sentido horário.*/
 
         /*(conversao para inline)display: inline;*/
       }
@@ -47,6 +48,7 @@
       p {
         text-align: center;
       }
+      
       a /*links, inline level*/ {
         border-width: 10px;
         border-style: solid;
