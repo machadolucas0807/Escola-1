@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: cadetblue;
+}
+header {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+main {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+article {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+article > aside {
+  background-color: lightgray;
+}
+nav {
+  background-color: rgb(54, 99, 10);
+}
+nav > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 30px;
+}
+nav > a :hover {
+  /*:hover -> ao passar o mouse em cima*/
+  text-decoration: underline;
+}
