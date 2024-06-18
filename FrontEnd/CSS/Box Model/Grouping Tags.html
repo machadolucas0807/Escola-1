@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cadetblue;
+      }
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0%;
+      }
+      article {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      article > aside {
+        background-color: lightgray;
+      }
+      nav {
+        background-color: rgb(54, 99, 10);
+      }
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      nav > a :hover  {
+        /*:hover -> ao passar o mouse em cima*/
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+      <nav>
+        <!--https://www.notion.so/nav-17d474732b704b13ad3a4f4a780634e2 -->
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <!--id = https://www.notion.so/id-identificador-a781afb613784830b98b4f7ee488d4f7 -->
+      </section>
+      <section id="noticias">
+        <article>
+          <!--https://www.notion.so/article-a4cdcdf738374b9f99bfa0be40d1d8c6 -->
+          <h2>Noticias Sobre o Pais</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            facilis voluptatibus excepturi, distinctio beatae deserunt eum animi
+            nobis, aspernatur dolores praesentium aut suscipit fugiat, magni
+            asperiores odio sed non omnis.
+          </p>
+          <aside>
+            <!--https://www.notion.so/aside-862f17a998924627937e73330b7844b0-->
+            <p>Atigo escrito por fulano</p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por Lucas Machado.</p>
+    </footer>
+  </body>
+</html>
