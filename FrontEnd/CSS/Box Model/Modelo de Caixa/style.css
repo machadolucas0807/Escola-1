@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      <a
-      href="https://www.notion.so/Box-Model-753f7ab48535466ca226ba9b26f0ba24?pvs=4">
-      Modelo de Caixas </a>
-    </title>
-    <style>
-      h1 /*box level*/ {
+@charset "UTF - 8";
+
+/*Aula: https://www.notion.so/Box-Model-753f7ab48535466ca226ba9b26f0ba24 */
+
+h1 /*box level*/ {
         background-color: lightcyan;
         height: 300px;
         width: 300px;
@@ -49,7 +41,7 @@
         text-align: center;
       }
       
-      a /*links, inline level*/ {
+      a /*inline level*/ {
         border-width: 10px;
         border-style: solid;
         border-color: red;
@@ -61,16 +53,3 @@
 
         /*(conversao para block)display: block;*/
       }
-    </style>
-  </head>
-
-  <body>
-    <h1>Exemplo de Caixa Box-Level</h1>
-
-    <p>
-      Páragrafos também são exemplos de caixa Box-Level, mas os
-      <a href="#">links sao exemplos de caixas inline-level</a>. Veremos como
-      tudo funciona.
-    </p>
-  </body>
-</html>
