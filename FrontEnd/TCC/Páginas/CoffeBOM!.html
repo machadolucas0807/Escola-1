@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/FrontEnd/TCC/Midia/favicon.ico" type="image/x-icon">
+
     <title>CoffeBOM!</title>
 </head>
 <body>
@@ -29,7 +30,12 @@
         <h2>Fidelidade</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat saepe magnam, sapiente autem est consequatur doloribus, asperiores exercitationem a ducimus, voluptatibus eius modi recusandae alias! Neque inventore nostrum consequuntur nobis.</p>
         <h2>O Café ☕</h2>
-        <img src="/FrontEnd/TCC/Midia/cafe-edt.jpg" alt="Cafés"> <!--Ajustar Tamanho-->
+            <picture>
+                <source media="(min-width: 1000px)" srcset="/FrontEnd/TCC/Midia/cafe-g.jpg" type="image/jpg">
+                <source media="(min-width: 700px)" srcset="/FrontEnd/TCC/Midia/cafe-m.jpg" type="image/jpg">
+                <img src="/FrontEnd/TCC/Midia/cafe-p.jpg" alt="Cafés">
+            </picture>
+         
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem repudiandae numquam odit, nam doloremque aperiam fugiat tenetur quis soluta unde accusamus veniam mollitia qui magni nobis dolores eveniet dolorem.</p>
         <hr>
     </main>
