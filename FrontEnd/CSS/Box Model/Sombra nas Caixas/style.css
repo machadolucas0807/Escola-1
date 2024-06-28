@@ -1,0 +1,18 @@
+@charset "UTF - 8";
+
+body{
+    background-color: #401D15;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #D9CCC5;
+}
+
+main{
+    background-color: #D9CCC5;
+}
+
+footer{
+    background-color: #D99B66;
+}
